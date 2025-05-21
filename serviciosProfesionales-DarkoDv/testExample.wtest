@@ -1,0 +1,19 @@
+import example.*
+
+describe "group of tests for pepita" {
+  method initialize() {
+    var sanMartin= new Universidad(provincia= "Buenos Aires", honorarios = 3500)
+    var rosario= new Universidad(provincia = "Santa Fe", honorarios= 2800)
+    var corrientes= new Universidad(provincia = "Corrientes", honorarios= 4200)
+    var hurlingham= new Universidad(provincia = "Buenos Aires", honorarios= 8800)
+    var juana= new VinculadosUniversidad(universidad=rosario)
+    var melina= new ProfesionalesLitoral(universidad=corrientes)
+    var rocio= new ProfesionalesLibres(universidad= hurlingham, honorarios= 5000, provincias= ["Santa Fe", "Cordoba","Buenos Aires"])
+    var luciana= new ProfesionalesLibres(universidad= rosario, honorarios=3200,provincias= ["Santa Fe","Entre Rios"])
+  
+  }
+
+  test"hola" {
+    
+  }
+}
